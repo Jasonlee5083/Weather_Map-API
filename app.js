@@ -1,25 +1,21 @@
-// app.js
+
 var app = angular.module("myApp", ["ngRoute", "uiGmapgoogle-maps"])
 
 app.config(["$routeProvider", function($routeProvider) {
   
     $routeProvider
   
-        .when("/one", {
-            templateUrl: "one/one.html",
-            controller: "oneController"
+        .when("/weather", {
+            templateUrl: "weather/weather.html",
+            controller: "weatherController"
         })
-    	.when("/two", {
-            templateUrl: "two/two.html",
-            controller: "twoController",
-        })
-		.when("/three", {
-            templateUrl: "three/three.html",
-            controller: "threeController",
+		.when("/map", {
+            templateUrl: "map/map.html",
+            controller: "mapController",
         })
 	
 	 	.otherwise({
-            redirectTo: "/one"
+            redirectTo: "/weather"
         });
 	
 	 

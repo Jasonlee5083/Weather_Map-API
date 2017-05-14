@@ -9,7 +9,7 @@
 	<link rel="stylesheet" href="style.css">
 
 </head>
-<body class="bg-1" id="myPage" data-spy="scroll" data-target=".navbar" >
+<body class="bg" id="myPage" data-spy="scroll" data-target=".navbar" >
 
 <!-- Navbar -->
 <nav class="navbar navbar-default">
@@ -24,51 +24,34 @@
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
-          <li><a href="/#/one">WEATHER</a></li>
-         <li><a href="/#/three">MAP</a></li>
+          <li><a href="/#/weather">WEATHER</a></li>
+         <li><a href="/#/map">MAP</a></li>
      
       </ul>
     </div>
   </div>
 </nav>
 
-<!-- First Container -->
-<div class="container-fluid text-center">
-	<div class="full-bg-img flex-center">
-	<div><ng-view class="text-center"></ng-view></div>
-<!--
-<div class="mapshow text-center">
+
+	<ng-view class="text-center"></ng-view>
 
 
-</div >
--->
-</div>
-</div>
-
-<!-- Footer -->
-<!--
-<footer class="footer container-fluid bg-4 text-center">
-  <p>Map service <a href="map.jasonlee.online">map.jasonlee.online</a></p> 
-</footer>
--->
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAFrB1ToTkq4a-BNsaGUf_zgtR_Rb3Aa-0&"></script>  
  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.js"></script>
  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-simple-logger/0.1.7/angular-simple-logger.js"></script>
 
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular-route.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.4/lodash.min.js"></script>
+  
   <script src ="angular-google-map.js"></script>
- 
-   
   <script src="app.js"></script>
-  <script src="one/one.js"></script>
-  <script src="two/two.js"></script>
-  <script src="three/three.js"></script>
+  <script src="weather/weather.js"></script>
+  <script src="map/map.js"></script>
    <script src="service.js"></script>
-   <script src="service2.js"></script>
+
 
   
 </body>

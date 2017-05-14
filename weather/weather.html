@@ -1,0 +1,18 @@
+
+<div class="row weather">
+	<div class="col-sm-offset-3 col-sm-6">
+		<input type="text" class="inputbox input-xs" id="one" ng-model="input" placeholder="address or zip code">
+		<button class="btn btn" ng-click="getMapdata(input)">submit</button>
+		<br><br>
+		<div class="row">
+			<div class="boxtwo text-center">
+				<h2 class="winfo">Weather/Geo API</h2>
+
+				<div class="resultOut">
+					<h3>{{weather}}</h3>
+					<h3>{{lat|unitLat}}</h3>
+					<h3>{{lng|unitlng}}</h3>
+				</div>
+			</div>
+		</div>
+	</div>

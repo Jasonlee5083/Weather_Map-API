@@ -1,0 +1,19 @@
+<div class="row map">
+	<div class ="col-sm-offset-3 col-sm-6">
+	<input type="text" class="inputbox input-xs" id="one" ng-model="input" placeholder="Street, city, or state">
+	<button class="btn btn" ng-click="getMapdata(input)">submit</button>
+	<br><br>
+	<div class="row">
+	<div class="boxtwo text-center">
+		<h2 class="mapinfo">Google Map API</h2>
+		
+	</div>
+	</div>
+	</div>
+
+<div class ="col-sm-offset-3 col-sm-6" >
+<div class="map text-center">
+	<ui-gmap-google-map class="text-center" center="map.center" zoom="map.zoom"></ui-gmap-google-map>
+</div>
+</div>
+</div>
